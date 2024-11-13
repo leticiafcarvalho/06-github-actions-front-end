@@ -1,0 +1,20 @@
+{
+  "name": "06-github-actions-front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "if exist build (del /F /Q build\\* && rmdir /S /Q build) else echo No build folder found. && next build && move ./out ./build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
